@@ -3,7 +3,7 @@ maxip=255
 maxnet=80
 for ((net=73; net<=$maxnet; ++net )) ; 
 do
-for ((ip=1; ip<=$maxip; ip=ip+64 )) ; 
+for ((ip=1; ip<=$maxip; ip=ip+32 )) ; 
 do
     ping 172.25.$net.$ip -c 10
 done
